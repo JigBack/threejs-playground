@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 const rootElement = document.getElementById('app');
 ReactDOM.render(
   <BrowserRouter>
+    <h1>Beans</h1>
     <Routes>
       <Route path="/" element={<HomePage />}>
         <Route path="expenses" element={<HomePage />} />
