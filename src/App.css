@@ -1,7 +1,9 @@
 * { margin:0; padding:0; }
 
-canvas { 
-  height: 100vh; 
-  width: 100vw; 
-  display: block;
+#root {
+  height: 100vh;
+}
+
+header {
+  z-index: 1;
 }
