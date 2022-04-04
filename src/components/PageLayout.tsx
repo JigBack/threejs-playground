@@ -1,5 +1,7 @@
-import { Grid, Box } from 'grommet';
 import React from 'react'
+import { Grid, Box } from 'grommet';
+import { routes } from '../App';
+import NavList from './NavList';
 
 interface PageLayoutProps {
   page: JSX.Element
@@ -11,17 +13,17 @@ const PageLayout = (props: PageLayoutProps) => {
       height={{
         height: '100%'
       }}
-      rows={['xxsmall', 'auto']}
-      columns={['xsmall', 'auto']}
+      rows={['auto']}
+      columns={['small', 'auto']}
       gap='none'
       areas={[
-        { name: 'header', start: [0, 0], end: [1, 0] },
-        { name: 'nav', start: [0, 1], end: [0, 1] },
-        { name: 'main', start: [1, 1], end: [1, 1] },
+        { name: 'nav', start: [0, 0], end: [0, 0] },
+        { name: 'main', start: [1, 0], end: [1, 0] },
       ]}
     >
-      <Box gridArea='header' background='brand' />
-      <Box gridArea='nav' background='secondary' />
+      <Box gridArea='nav' background='secondary'>
+        <NavList routes={routes} />
+      </Box>
       <Box gridArea='main' background='background'>
         {props.page}
       </Box>
