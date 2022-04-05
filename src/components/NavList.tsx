@@ -14,6 +14,7 @@ const NavList = (props: NavListProps) => {
       <InfiniteScroll items={routes}>
         {(route: RouteConfig) => (
           <Box
+            key={route.name}
             align='center'
             height='xsmall'
             flex={false}
