@@ -4,6 +4,12 @@
   height: 100vh;
 }
 
+.control-box {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 header {
   z-index: 1;
 }
