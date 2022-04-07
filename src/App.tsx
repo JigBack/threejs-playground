@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import './App.css';
 import PageLayout from './components/PageLayout';
 import VoxelTerrainPage from './pages/VoxelTerrainPage';
+import OrbitControlPage from './pages/OrbitControlPage/OrbitControlPage';
 
 export interface RouteConfig {
   path: string
@@ -27,6 +28,11 @@ export const routes: Array<RouteConfig> = [
     path: "/voxel-terrain",
     name: "Voxel Terrain",
     component: <VoxelTerrainPage />
+  },
+  {
+    path: "/orbit-controls",
+    name: "Orbit Controls",
+    component: <OrbitControlPage />
   }
 ]
 
